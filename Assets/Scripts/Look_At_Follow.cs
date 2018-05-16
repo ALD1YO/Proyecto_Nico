@@ -13,7 +13,7 @@ public class Look_At_Follow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.LookAt(Atarget.position);
-		transform.Translate(0.0f, 0.0f, mspeed*Time.deltaTime);
+		//transform.Translate(0.0f, 0.0f, mspeed*Time.deltaTime);
 
 	}
 }
