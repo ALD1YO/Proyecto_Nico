@@ -5,6 +5,7 @@ using UnityEngine.AI;
 public class Seguir_a_jugador : MonoBehaviour {
 	public Transform[] target;
 	public float speed;
+	public float Distancia_Seguir;
 	NavMeshAgent agent;
 	private int current;
 	void Start(){
@@ -18,7 +19,7 @@ public class Seguir_a_jugador : MonoBehaviour {
 		} else
 			current = (current + 1)%target.Length;
 			*/
-		if(Vector3.Distance(transform.position, target[0].position) < 10){
+		if(Vector3.Distance(transform.position, target[0].position) < Distancia_Seguir){
 			agent.SetDestination(target[0].position);
 			agent.isStopped = false;
 		}
