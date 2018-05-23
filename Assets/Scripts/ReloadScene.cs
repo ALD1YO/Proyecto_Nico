@@ -11,7 +11,7 @@ public class ReloadScene : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown("space")){
+		if(Input.GetKeyDown("p")){
 			print("space key was pressed");
 			SceneManager.LoadScene("The_Room");
 			//Application.LoadLevel(Application.loadedLevel);
